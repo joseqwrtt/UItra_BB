@@ -1,0 +1,87 @@
+Preguntas FIB (Fill in the Blank) – Blackboard Ultra
+
+
+
+Descripción:
+
+FIB permite crear preguntas con un solo espacio en blanco dentro de un enunciado.
+
+Cada pregunta debe contener **un único hueco marcado con [a]**.
+
+El alumno debe escribir la palabra o frase correcta para que la respuesta se considere correcta.
+
+Blackboard Ultra soporta la importación desde Excel/TXT sin limitaciones para un único hueco.
+
+
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+
+
+Reglas generales:
+
+- Tipo de pregunta: FIB
+
+- Texto de la pregunta: incluir **un solo marcador `[a]`** para indicar el hueco.
+
+- Respuestas posibles: colocar **una respuesta por celda** consecutiva en la fila. No es necesario usar `;` si cada variante está en su propia celda.
+
+
+
+Ejemplo de Excel:
+
+
+
+Tipo | Texto de la pregunta                                    | Respuesta 1      | Respuesta 2 | Respuesta 3    | Respuesta 4
+
+FIB   | El sistema feudal estaba compuesto por [a] y vasallos. | señores feudales | nobles      | terratenientes | aristócratas
+
+
+
+⚠️ Comentario sobre el uso de `;`:
+
+- Solo usar `;` si deseas incluir **variantes dentro de la misma celda**, por ejemplo:
+
+  - Singular y plural: `perro;perros`
+
+  - Sinónimos: `noble;aristócrata`
+
+  - Abreviaturas: `EE.UU.;Estados Unidos`
+
+- Si se usan variantes, Blackboard considerará cualquiera de las opciones separadas por `;` como correcta para ese hueco.
+
+
+
+Notas:
+
+- Solo se permite un hueco por pregunta (`[a]`).
+
+- Cada celda de respuesta se interpreta como respuesta válida para ese hueco.
+
+- Blackboard asignará automáticamente las respuestas al hueco `[a]`.
+
+
+
+2️⃣ Cómo lo verá el alumno:
+
+
+
+- En modo estudiante, el marcador `[a]` aparecerá como un hueco en blanco:
+
+ El sistema feudal estaba compuesto por ___ y vasallos.
+
+- El alumno debe escribir **cualquiera de las respuestas aceptadas** para que se marque como correcto.
+
+
+
+3️⃣ Consejos y consideraciones:
+
+
+
+- Usar `[a]` garantiza compatibilidad con todas las versiones de Blackboard Ultra.
+
+- Puedes usar varias celdas para cubrir sinónimos, variantes de singular/plural, abreviaturas, etc.
+
+- Usar `;` dentro de una celda solo cuando quieras que múltiples variantes se consideren correctas en la misma celda.
+
+- Siempre prueba la pregunta en modo estudiante antes de usarla en un examen real.

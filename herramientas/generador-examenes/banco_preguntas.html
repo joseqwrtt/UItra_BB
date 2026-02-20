@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Plantillas Blackboard</title>
+    
+    <link rel="stylesheet" href="../../style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Plantilla de Preguntas Blackboard</h1>
+        
+        <p style="text-align: left;">
+            <a href="../../categorias/evaluacion.html" class="back-link">← Volver a Evaluación</a>
+        </p>
+        
+        <p class="subtitle">Define los tipos y cantidad de preguntas para generar tu plantilla.</p>
+
+        <h2>1. Generar Plantilla Excel Vacía</h2>
+        <table id="questionsTable">
+            <thead>
+                <tr>
+                    <th>Info</th>
+                    <th>Tipo de pregunta</th>
+                    <th>Nº preguntas</th>
+                    <th>Nº respuestas</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="total-label">Preguntas totales:</td>
+                    <td id="totalPreguntas" class="total-value">0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="actions">
+            <button id="btnGenerarExcel" class="btn primary">Generar plantilla Excel vacía</button>
+        </div>
+        
+        <div class="conversion-section" style="margin-top: 40px; border-top: 1px dashed #ccc; padding: 30px 0; text-align: center;">
+            <h2 style="margin-bottom: 10px;">2. Convertir tu Excel (Relleno) a TXT</h2>
+            <p style="margin-bottom: 25px; color: #555;">Sube la plantilla Excel que has rellenado para generar el archivo TXT compatible con Blackboard.</p>
+            
+            <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; display: inline-block; border: 1px solid #eee;">
+                <input type="file" id="fileInput" accept=".xlsx, .xls" style="display: block; margin: 0 auto 20px auto;">
+                <button id="btnConvertirTXT" class="btn secondary" style="width: 100%; max-width: 300px;">
+                    Convertir Excel a TXT
+                </button>
+            </div>
+        </div>
+
+        <p class="warning-text" style="background: #fff9c4; padding: 10px; border-radius: 5px; margin-top: 30px;">
+            ⚠️ **Flujo:** 1. Generar Excel. 2. Rellenar. 3. Convertir a TXT. 4. Subir a Blackboard.
+        </p>
+
+        <p class="warning-text" style="margin-top: 20px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

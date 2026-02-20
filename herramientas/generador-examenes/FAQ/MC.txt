@@ -1,0 +1,26 @@
+FAQ – Preguntas MC (Multiple Choice, una sola respuesta correcta) – Blackboard Ultra
+
+Descripción:
+MC permite crear preguntas con varias opciones de respuesta, pero solo una es la correcta.
+El alumno debe seleccionar una de las opciones propuestas.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+Reglas generales:
+- Tipo de pregunta: MC
+- Texto de la pregunta: enunciado principal.
+- Respuestas posibles: incluir tantas opciones como desees (mínimo 2).
+- Indicar cuál es la correcta en la columna "Seleccione opción" → escribir "correct".
+
+Ejemplo en Excel:
+
+Tipo | Texto de la pregunta             | Respuesta 1 | Seleccione opción 1 | Respuesta 2 | Seleccione opción 2 | Respuesta 3 | Seleccione opción 3
+MC   | ¿Cuál es la capital de España?   | Madrid      | correct             | Barcelona   | incorrect           | Valencia    | incorrect
+
+2️⃣ Cómo lo verá el alumno:
+El sistema mostrará la pregunta y todas las opciones en lista. El alumno podrá marcar solo una.
+
+3️⃣ Consejos:
+- Siempre debe haber **una sola respuesta marcada como "correct"**.
+- Puedes añadir hasta 100 opciones.
+- Verifica en modo estudiante antes de usarla en un examen real.

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones - Soporte Blackboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al Panel</a>
+        
+        <h1>Calificaciones y Rúbricas</h1>
+        <p class="subtitle">Gestión del Libro de Calificaciones, cálculos y evaluación por rúbricas.</p>
+
+        <div class="grid-evaluacion">
+            <a href="../guias/rubricas/proceso_rubricas.html" class="card-tool">
+                <span class="tag">Herramienta</span>
+                <h3>Guía de Rúbricas</h3>
+                <p>Cómo asignar, importar y crear rúbricas (incluyendo el asistente de IA).</p>
+            </a>
+            <a href="../guias/ponderaciones/guia_ponderaciones.html" class="card-tool">
+                <span class="tag">Guía - Cálculos</span>
+                <h3>Cálculos y Ponderación</h3>
+                <p>Configuración de la columna de Calificación General y pesos de actividades.</p>
+            </a>
+            <a href="../guias/gestion-columnas/guia_libro_orden.html" class="card-tool">
+                <span class="tag">Guía - Columnas</span>
+                <h3>Organizar Columnas</h3>
+                <p>Gestión y reordenación de elementos en la vista del Libro de Calificaciones.</p>
+            </a>
+
+            <a href="../guias/gestion-columnas/guia_columna_manual.html" class="card-tool">
+                <span class="tag">Guía - Columnas</span>
+                <h3>Crear Columna Manual</h3>
+                <p>Añadir columnas independientes (no vinculadas a tareas o exámenes) para calificaciones adicionales o alternativas.</p>
+            </a>
+        </div>
+        
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+    <script src="../history.js"></script>
+    <script>
+        document.querySelectorAll('.card-tool').forEach(card => {
+            card.addEventListener('click', function() {
+                // Esto le avisa a history.js que guarde la dirección del enlace
+                registrarVisita(this.getAttribute('href'));
+            });
+        });
+    </script>
+    
+</body>
+</html>

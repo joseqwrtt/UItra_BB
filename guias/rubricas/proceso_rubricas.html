@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Rúbricas - Blackboard Ultra</title>
+    <link rel="stylesheet" href="../../style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <a href="../../categorias/calificaciones.html" class="back-link">← Volver a Calificaciones y Rúbricas</a>
+        
+        <h1>Guía de Gestión de Rúbricas</h1>
+        <p class="subtitle">Selecciona el método que mejor se adapte a tu necesidad:</p>
+
+        <button class="accordion">1. La rúbrica ya existe en el curso (Asignarla)</button>
+        <div class="panel">
+            <div class="step-list">
+                <p>Usa este paso si la rúbrica ya aparece en el listado de "Rúbricas del curso" pero la actividad aún no la tiene asociada.</p>
+                <ol>
+                    <li>Entra en la <strong>Configuración de la Actividad</strong> (icono de engranaje).</li>
+                    <li>Desliza hasta "Herramientas adicionales" y pulsa en <strong>Agregar rúbrica de calificación</strong>.</li>
+                    <div class="img-placeholder">
+                        <img src="img/asignar_01.png" alt="Paso: Abrir panel de rúbricas">
+                    </div>
+                    <li>Verás un listado con todas las rúbricas disponibles en el curso. <strong>Pulsa sobre "Añadir"</strong> de la rúbrica que quieres usar.</li>
+                    <div class="img-placeholder">
+                        <img src="img/asignar_02.png" alt="Paso: Seleccionar de la lista">
+                    </div>
+                </ol>
+            </div>
+        </div>
+
+        <button class="accordion">2. Copiar una rúbrica de otro curso</button>
+        <div class="panel">
+            <div class="step-list">
+                <p>Para reutilizar rúbricas de asignaturas pasadas o de otros grupos.</p>
+                <ol>
+                    <li>En el curso actual, pulsa el icono de los tres puntos <strong>(...)</strong> junto a "Contenido del curso" y elige <strong>Copiar elementos</strong>.</li>
+                    <div class="img-placeholder">
+                        <img src="img/copiar_01.png" alt="Botón copiar contenido">
+                    </div>
+                    <li>Busca el curso de origen y entra en la carpeta <strong>Rúbricas</strong>.</li>
+                    <div class="img-placeholder">
+                        <img src="img/copiar_02.png" alt="Seleccionar curso">
+                    </div>
+                    <div class="img-placeholder">
+                        <img src="img/copiar_03.png" alt="Seleccionar carpeta Rúbricas">
+                    </div>
+                    <li><u><em>Marca la rúbrica deseada</em></u> y pulsa en <strong>Comenzar copia</strong>.</li>
+                    <div class="img-placeholder">
+                        <img src="img/copiar_04.png" alt="Seleccionar rúbrica para copiar">
+                    </div>
+                </ol>
+            </div>
+        </div>
+
+        <button class="accordion">3. Crear una rúbrica nueva desde cero</button>
+        <div class="panel">
+            <div class="step-list">
+                <ol>
+                    <li>En la configuración de la tarea, pulsa en <strong>Agregar rúbrica de calificación</strong>.</li>
+                    <li>Selecciona el botón <strong>Crear</strong>.</li>
+                    <div class="img-placeholder">
+                        <img src="img/nueva_01.png" alt="Botón crear nueva">
+                    </div>
+                    <li>Configura el tipo (puntos/porcentaje) y rellena los textos. No olvides pulsar <strong>Guardar</strong>.</li>
+                    <div class="img-placeholder">
+                        <img src="img/nueva_02.png" alt="Botón crear nueva">
+                    </div>
+                </ol>
+            </div>
+        </div>
+
+        <button class="accordion">4. Generar una base con Inteligencia Artificial</button>
+        <div class="panel">
+            <div class="step-list">
+                <ol>
+                    <li>Dentro del panel de rúbricas, elige <strong>Generar</strong>.</li>
+                    <div class="img-placeholder">
+                        <img src="img/ia_01.png" alt="Opción IA Blackboard">
+                    </div>
+                    <li>Escribe el tema de la rúbrica y pulsa en <strong>Generar</strong>. Revisa y pulsa en <strong>Continuar</strong>.</li>
+                    <div class="img-placeholder">
+                        <img src="img/ia_02.png" alt="Opción IA Blackboard">
+                    </div>
+                </ol>
+            </div>
+        </div>
+
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2025</p>
+
+<a href="../../index.html" class="back-link">← Volver al panel principal</a>
+
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

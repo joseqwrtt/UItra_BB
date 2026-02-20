@@ -1,0 +1,30 @@
+FAQ – Preguntas ESS (Essay, respuesta abierta) – Blackboard Ultra
+
+Descripción:
+ESS permite crear preguntas de tipo ensayo donde el alumno debe escribir una respuesta libre en formato de texto.
+Se utiliza normalmente para preguntas abiertas, redacciones o explicaciones largas.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+Reglas generales:
+- Tipo de pregunta: ESS
+- Texto de la pregunta: enunciado principal.
+- No requiere opciones de respuesta.
+- Puedes añadir un texto de referencia en la columna de respuesta, pero será solo un ejemplo para el docente (no evaluado automáticamente).
+
+Ejemplo en Excel:
+
+Tipo | Texto de la pregunta                     | Respuesta
+ESS  | Explica las causas de la Primera Guerra. | (respuesta abierta del estudiante)
+
+2️⃣ Cómo lo verá el alumno:
+El sistema mostrará la pregunta y un cuadro de texto donde el estudiante podrá escribir libremente su respuesta.
+
+3️⃣ Evaluación:
+- Blackboard **no corrige automáticamente** este tipo de pregunta.
+- El docente debe revisar y calificar manualmente cada respuesta.
+
+4️⃣ Consejos:
+- Útil para evaluar redacción, razonamiento o argumentación.
+- No es recomendable usarlo en exámenes de corrección automática.
+- Puedes dar una guía o criterios de evaluación en el enunciado.

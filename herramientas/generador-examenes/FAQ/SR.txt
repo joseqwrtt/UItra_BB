@@ -1,0 +1,37 @@
+FAQ – Preguntas SR (Respuesta corta / Short Response) – Blackboard Original
+
+Descripción:
+SR permite que el alumno escriba una respuesta breve en texto libre.
+Se utiliza para evaluaciones rápidas, preguntas abiertas de pocas palabras o nombres propios.
+Actualmente, **SR solo es compatible con la vista Original de Blackboard**, no funciona en Ultra.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+Reglas generales:
+- Tipo de pregunta: SR
+- Texto de la pregunta: colocar el enunciado completo.
+- Respuestas esperadas: opcional, para referencia del docente; **Ultra no autocalifica SR**, por lo que se deben evaluar manualmente.
+- No usar marcadores `[a]`; todo el texto se considera la pregunta.
+
+Ejemplo de Excel/TXT:
+
+Tipo | Texto de la pregunta                          | Respuesta 1   | Respuesta 2
+SR   | Nombre del presidente actual de EE.UU.        | Joe Biden     | (opcional) variantes aceptables
+
+Notas:
+- Cada columna de respuesta sirve como guía para corrección manual.
+- Las respuestas no se autocalifican; el docente debe evaluarlas.
+
+2️⃣ Cómo lo verá el alumno:
+
+- En modo estudiante, aparecerá un campo de texto donde puede escribir su respuesta breve.
+- No hay selección de opciones; el alumno escribe libremente.
+- La evaluación depende del docente.
+
+3️⃣ Consideraciones importantes:
+
+- Solo compatible con Blackboard Original.
+- Ideal para nombres, definiciones cortas o respuestas de una o dos frases.
+- La importación/exportación desde Excel/TXT solo sirve para generar el texto de la pregunta; la evaluación siempre es manual.
+- Siempre revisar la pregunta en modo estudiante antes de usarla en un examen real.
+

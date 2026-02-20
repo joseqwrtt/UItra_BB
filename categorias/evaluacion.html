@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación - Soporte Blackboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al Panel</a>
+        <h1>Gestión de Evaluación</h1>
+        <p class="subtitle">Herramientas y guías para exámenes y actividades.</p>
+
+        <div class="grid-evaluacion">
+            <a href="../herramientas/generador-examenes/banco_preguntas.html" class="card-tool">
+                <span class="tag">Herramienta</span>
+                <h3>Generador de Exámenes (Excel a TXT)</h3>
+                <p>Convierte tus plantillas de Excel al formato compatible con Blackboard.</p>
+            </a>
+
+            <a href="../guias/examenes/ajustes_examenes.html" class="card-tool">
+                <span class="tag">Guía de Configuración</span>
+                <h3>Ajustes de Exámenes y Tests</h3>
+                <p>Configuración de fechas, seguridad, intentos y visualización.</p>
+            </a>
+
+            <a href="../guias/examenes/añadir_banco.html" class="card-tool">
+                <span class="tag">Guía de Banco</span>
+                <h3>Añadir Preguntas desde Banco</h3>
+                <p>Cómo reutilizar y copiar bancos de preguntas entre diferentes cursos de Ultra.</p>
+            </a>
+
+            <a href="../guias/resolucion-problemas/guia_resolucion_examenes.html" class="card-tool">
+                <span class="tag">Resolución de Problemas</span>
+                <h3>Intentos en Borrador y Fallos</h3>
+                <p>Solución a errores comunes y gestión de exámenes que se quedan "en curso".</p>
+            </a>
+
+            <a href="../guias/actividades/guia_crear_actividad.html" class="card-tool">
+                <span class="tag">Guía de Actividad</span>
+                <h3>Creación de Actividades</h3>
+                <p>Configuración de entregas individuales, grupales y parámetros de evaluación.</p>
+            </a>
+        </div>
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+    <script src="../history.js"></script>
+    <script>
+        document.querySelectorAll('.card-tool').forEach(card => {
+            card.addEventListener('click', function() {
+                // Esto le avisa a history.js que guarde la dirección del enlace
+                registrarVisita(this.getAttribute('href'));
+            });
+        });
+    </script>
+</body>
+</html>

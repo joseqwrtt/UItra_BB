@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos y Alumnos - Soporte Blackboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al Panel</a>
+        <h1>Gestión de Alumnos y Grupos</h1>
+        <p class="subtitle">Herramientas para inscripciones masivas y adaptaciones de tiempo.</p>
+
+        <div class="grid-evaluacion">
+            <a href="../herramientas/generador-grupos/grupos_aulas_ultra.html" class="card-tool">
+                <span class="tag">Herramienta</span>
+                <h3>Generador de Grupos CSV</h3>
+                <p>Herramienta para crear automáticamente el archivo de carga masiva.</p>
+            </a>
+            <a href="../guias/importar-grupos/proceso_grupos.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Importación a Blackboard</h3>
+                <p>Guía paso a paso para subir el archivo CSV generado al aula virtual.</p>
+            </a>
+            <a href="../guias/excepciones/guia_excepciones.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Excepción de tiempo o fecha</h3>
+                <p>Cómo agregar tiempo adicional y gestionar acomodaciones.</p>
+            </a>
+        </div>
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+    
+    <script src="../history.js"></script>
+    <script>
+        document.querySelectorAll('.card-tool').forEach(card => {
+            card.addEventListener('click', function() {
+                // Esto le avisa a history.js que guarde la dirección del enlace
+                registrarVisita(this.getAttribute('href'));
+            });
+        });
+    </script>
+    
+</body>
+</html>

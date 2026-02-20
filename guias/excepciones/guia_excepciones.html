@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excepciones - Soporte Blackboard</title>
+    
+    <link rel="stylesheet" href="../../style.css">
+    
+    <style>
+        .accordion {
+            background-color: #f8f9fa;
+            color: #333;
+            cursor: pointer;
+            padding: 20px;
+            width: 100%;
+            border: 1px solid #ddd;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: 0.3s;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .active, .accordion:hover {
+            background-color: #0056b3;
+            color: white;
+            border-color: #004494;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            font-size: 1.3em;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 20px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border-radius: 0 0 8px 8px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .img-placeholder {
+            background-color: #f0f0f0;
+            border: 1px dashed #ccc;
+            padding: 10px;
+            margin: 15px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .img-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: left; margin-bottom: 20px;">
+            <a href="../../categorias/grupos_alumnos.html" class="back-link">← Volver a Grupos y Alumnos</a>
+        </div>
+
+        <h1>Excepciones en Blackboard Ultra</h1>
+        <p class="subtitle">Gestiona casos especiales de alumnos que requieren más tiempo o fechas distintas.</p>
+
+        <button class="accordion">1. Excepción de Tiempo (Acomodaciones)</button>
+        <div class="panel">
+
+            <div style="background: #fff4e5; border-left: 5px solid #ff9800; padding: 15px; margin: 20px 0;">
+                <strong>⚠️ IMPORTANTE:</strong> Una vez finalizado el examen o la actividad, recuerda eliminar la excepción, ya que afecta a todas las actividades o exámenes del curso con temporizador.
+            </div>
+
+            <p style="margin-top: 20px;">
+                Para agregar tiempo en los exámenes, debes ir a <strong>“Libro de Calificaciones”</strong> → <strong>“Estudiantes”</strong> y aquí buscar el alumno en cuestión. Luego, clicas en los <strong>3 puntos de la derecha</strong> y seleccionas la opción: <strong>“Excepciones”</strong>:
+            </p>
+            
+            <div class="img-placeholder">
+                <img src="img/excepcion_paso1.png" alt="Menú Excepciones Estudiante">
+            </div>
+
+            <p>
+                Dentro del panel de <strong>“Excepciones”</strong>, debes clicar la opción <strong>“Excepción sobre el límite de tiempo"</strong> y luego podrás agregar el tiempo. A diferencia de las aulas originales, aquí deberás agregar el tiempo con porcentajes.
+            </p>
+
+            <div class="img-placeholder">
+                <img src="img/excepcion_paso2.png" alt="Configuración de porcentaje de tiempo">
+            </div>
+
+            <div style="background: #fff4e5; border-left: 5px solid #ff9800; padding: 15px; margin: 20px 0;">
+                <strong>⚠️ IMPORTANTE:</strong> Una vez finalizado el examen o la actividad, recuerda eliminar la excepción, ya que afecta a todas las actividades o exámenes del curso con temporizador.
+            </div>
+        </div>
+
+        <button class="accordion">2. Excepción de Fecha (Casos Puntuales)</button>
+        <div class="panel">
+            <p style="margin-top: 20px;">Usa esto cuando un alumno no pudo entregar a tiempo o necesita una prórroga en una actividad específica.</p>
+            <p>Próximamente se añadirá el contenido detallado para fechas.</p>
+        </div>
+
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

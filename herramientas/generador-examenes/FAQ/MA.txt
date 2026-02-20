@@ -1,0 +1,26 @@
+FAQ – Preguntas MA (Multiple Answer, varias respuestas correctas) – Blackboard Ultra
+
+Descripción:
+MA permite crear preguntas con varias opciones de respuesta, donde pueden ser correctas más de una.
+El alumno debe seleccionar todas las respuestas correctas para obtener la puntuación completa.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+Reglas generales:
+- Tipo de pregunta: MA
+- Texto de la pregunta: enunciado principal.
+- Respuestas posibles: mínimo 2.
+- Indicar las correctas en la columna "Seleccione opción" → escribir "correct" en todas las que correspondan.
+
+Ejemplo en Excel:
+
+Tipo | Texto de la pregunta              | Respuesta 1 | Seleccione opción 1 | Respuesta 2 | Seleccione opción 2 | Respuesta 3 | Seleccione opción 3
+MA   | Selecciona los colores primarios. | Rojo        | correct             | Azul        | correct             | Verde       | incorrect
+
+2️⃣ Cómo lo verá el alumno:
+El sistema mostrará la pregunta y todas las opciones en lista. El alumno podrá marcar varias casillas.
+
+3️⃣ Consejos:
+-  Puede haber **2 o más respuestas correctas**.
+- Blackboard solo marcará la pregunta como correcta si el alumno selecciona todas las correctas y ninguna incorrecta.
+- Verifica en modo estudiante antes de usarla en un examen real.

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas Externas - Soporte Blackboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: left; margin-bottom: 20px;">
+            <a href="../index.html" class="back-link">← Volver al Panel</a>
+        </div>
+        
+        <h1>Herramientas Externas</h1>
+        <p class="subtitle">Integraciones de terceros para contenido multimedia, originalidad y proctoring.</p>
+
+        <div class="grid-evaluacion">
+            <a href="../guias/herramientas_web_externas/KalturaMedia/guia_kaltura.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Kaltura (Vídeos)</h3>
+                <p>Gestión de contenido multimedia en "Mis medios".</p>
+            </a>
+            
+            <a href="../guias/herramientas_web_externas/Turnitin/guia_turnitin.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Turnitin</h3>
+                <p>Uso de la herramienta de similitud y originalidad.</p>
+            </a>
+
+            <a href="../guias/herramientas_web_externas/Smowl/guia_smowl.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Informes Smowl</h3>
+                <p>Revisión de informes de supervisión y proctoring.</p>
+            </a>
+        </div>
+
+        <div style="text-align: left; margin-top: 40px; margin-bottom: 20px;">
+            <a href="../index.html" class="back-link">← Volver al Panel</a>
+        </div>
+
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+
+    <script src="../history.js"></script>
+    <script>
+        document.querySelectorAll('.card-tool').forEach(card => {
+            card.addEventListener('click', function() {
+                // Esto le avisa a history.js que guarde la dirección del enlace
+                registrarVisita(this.getAttribute('href'));
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

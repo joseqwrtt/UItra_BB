@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Grupos - Soporte Blackboard</title>
+    
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="container" style="max-width: 600px;"> <h1>Generador de Grupos CSV</h1>
+        
+        <p style="text-align: left;">
+            <a href="../../categorias/grupos_alumnos.html" class="back-link">← Volver a Grupos</a>
+        </p>
+        
+        <p class="subtitle">Genera el archivo necesario para crear grupos de forma masiva en Blackboard Ultra.</p>
+
+        <div class="form-container" style="text-align: left;">
+            <div class="input-group" style="margin-bottom: 15px;">
+                <label style="display:block; font-weight:bold; margin-bottom:5px;">Título base de los grupos:</label>
+                <input type="text" id="tituloBase" placeholder="Ej: Grupo de trabajo" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 15px;">
+                <label style="display:block; font-weight:bold; margin-bottom:5px;">Cantidad de grupos a crear:</label>
+                <input type="number" id="cantidadGrupos" min="1" value="1" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 15px;">
+                <label style="display:block; font-weight:bold; margin-bottom:5px;">Nombre del conjunto de grupos:</label>
+                <input type="text" id="nombreConjunto" placeholder="Ej: Actividad 01" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+            </div>
+
+        <div class="checkbox-group" style="background:#f9f9f9; padding:15px; border-radius:8px; margin-bottom:20px; border: 1px solid #eee; text-align: left;">
+            <div style="margin-bottom: 10px;">
+                <input type="checkbox" id="selfEnroll" checked>
+                <label for="selfEnroll" style="font-weight: bold; cursor: pointer;">Permitir autoinscripción (Self Enroll)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="duplicarGrupos">
+                <label for="duplicarGrupos" style="font-weight: bold; cursor: pointer;">Duplicar grupos con versión '(individual)'</label>
+                <p style="margin: 8px 0 0 25px; font-size: 0.85em; color: #666; line-height: 1.4;">
+                    ⚠️ **Nota:** Si activas esto, se creará el doble de grupos (ej: <em>'Grupo 1'</em> y <em>'Grupo (individual) 1'</em>).
+                </p>
+            </div>
+        </div>
+
+            <div style="text-align: center;">
+                <button id="btnGenerarCSV" class="btn primary" style="width: 100%;">Generar CSV automáticamente</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px dashed #ccc; text-align: center;">
+            <a href="../../guias/importar-grupos/proceso_grupos.html" class="btn secondary" style="text-decoration: none; display: inline-block;">
+                ¿Cómo subir este CSV a Blackboard?
+            </a>
+        </div>
+
+        <p class="warning-text" style="margin-top: 20px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+    <script src="script_grupos.js"></script>
+</body>
+</html>

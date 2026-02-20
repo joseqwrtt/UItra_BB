@@ -1,0 +1,31 @@
+FAQ – Preguntas NUM (Respuesta numérica) – Blackboard Ultra
+
+Descripción:
+Las preguntas NUM permiten que el alumno ingrese un valor numérico como respuesta. Blackboard Ultra evaluará si el valor ingresado coincide con la respuesta correcta que se defina en la importación.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+- Tipo de pregunta: NUM
+- Texto de la pregunta: en la columna "Texto de la pregunta", escribe el enunciado.
+- Respuesta correcta: en la columna "Respuesta 1", escribe únicamente el valor numérico correcto. No es necesario usar “correct” o “incorrect”.
+
+Ejemplo de Excel:
+
+Tipo | Texto de la pregunta                      | Respuesta 1
+NUM  | ¿Cuántos continentes hay en la Tierra?    | 7
+
+Notas:
+- Se recomienda que la respuesta sea un número entero o decimal según lo esperado.
+- Blackboard puede ser sensible a decimales y formato de separación (usar punto `.` para decimales).
+- Solo se permite una respuesta correcta por pregunta NUM.
+
+2️⃣ Cómo lo verá el alumno:
+
+- En modo estudiante, verá el enunciado con un campo para ingresar el número:
+  ¿Cuántos continentes hay en la Tierra? [campo de respuesta]
+
+3️⃣ Consejos y consideraciones:
+
+- Revisar que los números estén correctamente formateados en Excel/TXT antes de importar.
+- Blackboard Ultra compara el valor ingresado exactamente; considera usar decimales con cuidado.
+- Para rangos de respuesta (por ejemplo entre 0.5 y 1.0), es mejor crear preguntas separadas o usar tipos distintos que permitan tolerancia.

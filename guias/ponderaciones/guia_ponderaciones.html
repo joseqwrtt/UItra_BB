@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos y Ponderaciones - Soporte Blackboard</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: left; margin-bottom: 20px;">
+            <a href="../../categorias/calificaciones.html" class="back-link">← Volver a Calificaciones</a>
+        </div>
+
+        <h1>Cálculos y Ponderaciones</h1>
+        <p class="subtitle">Existen diferentes formas de configurar la nota final. Seleccione el método que desea configurar:</p>
+
+        <button class="accordion">1. Ultra Calificaciones - Añadir cálculo (Ponderación)</button>
+        <div class="panel">
+            <div class="step-section">
+                <p style="margin-top: 20px;">Siga estos pasos para generar una ponderación utilizando operadores matemáticos básicos. <br>
+                <strong>Importante:</strong> Actualmente no es posible utilizar condicionales.</p>
+                
+                <div class="info-box">
+                    <strong>Acceda a:</strong> Libro de calificaciones → Calificaciones → Nueva columna (+) → <strong>Añadir cálculo</strong>
+                </div>
+                <div class="img-placeholder">
+                    <img src="img/ruta_calculo.png" alt="Acceso a añadir cálculo">
+                </div>
+
+                <h3>Configuración del esquema</h3>
+                <p>Indique un título descriptivo (Ej: <i>Nota final 1ª Convocatoria</i>) y mantenga el esquema en <strong>Puntos</strong>.</p>
+                <div class="warning-box">
+                    <strong>¡Atención!</strong> Debe desmarcar la opción: <i>“El cálculo de las calificaciones se basa en los puntos obtenidos sobre el total de puntos calificados”</i>.
+                </div>
+                <div class="img-placeholder">
+                    <img src="img/config_esquema.png" alt="Configuración de esquema">
+                </div>
+
+                <h3>Realizar la ponderación</h3>
+                <p>Deberá combinar <strong>Funciones/Variables</strong> con <strong>Operadores matemáticos</strong>:</p>
+                
+                <p><strong>Paso 1:</strong> Seleccione una <strong>Variable</strong> (la columna a incluir).</p>
+                <div class="img-placeholder">
+                    <img src="img/paso1_variable.png" alt="Selección de variable">
+                </div>
+
+                <p><strong>Paso 2:</strong> Añada el operador <strong>multiplicación (*)</strong> y el valor del porcentaje (ej: 20% = 0,2).</p>
+                <div class="img-placeholder">
+                    <img src="img/paso2_operador.png" alt="Uso de multiplicación">
+                </div>
+
+                <p><strong>Paso 3:</strong> Repita el proceso con el resto de elementos y únalos con el operador <strong>suma (+)</strong>.</p>
+                <div class="img-placeholder">
+                    <img src="img/paso3_suma.png" alt="Unión con suma">
+                </div>
+
+                <h3>Ejemplos de Aplicación</h3>
+                <div class="info-box">
+                    <strong>Ejemplo Nota Final:</strong> El total de los multiplicadores debe sumar 1 (100%).
+                </div>
+                <div class="img-placeholder">
+                    <img src="img/ejemplo_convocatoria.png" alt="Ejemplo nota final">
+                </div>
+
+                <div class="info-box">
+                    <strong>Ejemplo Porfolio (Base 10):</strong> 
+                </div>
+                <div class="img-placeholder">
+                    <img src="img/ejemplo_porfolio.png" alt="Ejemplo porfolio">
+                </div>
+
+                <div class="warning-box">
+                    <strong>Si desea base 4 (40%):</strong> Mantenga la configuración del primer ejemplo pero excluya el examen de la fórmula.
+                </div>
+                <div class="img-placeholder">
+                    <img src="img/ejemplo_base4.png" alt="Ejemplo base 4">
+                </div>
+                
+                <div class="info-box">
+                    <strong>Nota para 2ª Convocatoria:</strong> Si quiere conservar la mejor nota entre convocatorias, utilice la función <strong>“Máximo”</strong> en lugar de “Variable”.
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">2. Ultra Calificación General - Columnas Ponderadas</button>
+        <div class="panel">
+            <div class="step-section">
+                <p style="margin-top: 20px;">Este método permite configurar ponderaciones de forma visual. 
+                Es aplicable tanto a la <strong>Calificación General</strong> como a columnas de <strong>Cálculo Total</strong> creadas manualmente.</p>
+                
+                <div class="warning-box">
+                    <strong>⚠️ IMPORTANTE:</strong> El total de los cálculos debe sumar siempre el <strong>100%</strong>.
+                </div>
+
+                <div class="img-placeholder">
+                    <img src="img/config_columna_total.png" alt="Configuración columna total">
+                </div>
+
+                <h3>Acceso a la configuración</h3>
+                <p>Vaya a <strong>Libro de calificaciones</strong> → <strong>Calificaciones</strong> y busque la columna "Calificación general".</p>
+                <div class="img-placeholder">
+                    <img src="img/ruta_calificacion_general.png" alt="Ruta calificación general">
+                </div>
+
+                <p>Pulse sobre el icono de la columna y elija <strong>Editar</strong>.</p>
+                <div class="img-placeholder">
+                    <img src="img/editar_general.png" alt="Botón editar calificación">
+                </div>
+
+                <h3>Configurar la Ponderación</h3>
+                <p>Dentro del panel lateral, seleccione la opción <strong>Ponderación</strong>.</p>
+                <div class="img-placeholder">
+                    <img src="img/seleccionar_ponderacion.png" alt="Selección de ponderación">
+                </div>
+
+                <p><strong>Limpieza de elementos:</strong> Desactive los elementos que no formen parte de la convocatoria actual pulsando el icono del "prohibido" (debe quedar en morado).</p>
+                <div class="img-placeholder">
+                    <img src="img/excluir_elementos.png" alt="Excluir elementos del cálculo">
+                </div>
+
+                <h3>Desvincular y Asignar Porcentajes</h3>
+                <p>Para mayor precisión, despliegue las categorías y pulse el icono de <strong>vínculo</strong> para desvincular actividades individuales. Esto permite dar un peso específico a cada tarea por separado.</p>
+                <div class="img-placeholder">
+                    <img src="img/desvincular_icon.png" alt="Desvincular actividades">
+                </div>
+
+                <p>Ahora, asigne los porcentajes correspondientes a cada elemento desvinculado.</p>
+                <div class="img-placeholder">
+                    <img src="img/asignar_porcentajes.png" alt="Asignación de porcentajes">
+                </div>
+
+                <div class="info-box">
+                    <strong>Configuración Final:</strong> Asegúrese de que el esquema esté en <strong>Puntos</strong> y decida si la columna debe ser visible para los estudiantes.
+                </div>
+                <div class="img-placeholder">
+                    <img src="img/ajuste_final_puntos.png" alt="Ajuste final y visibilidad">
+                </div>
+            </div>
+        </div>
+
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+    <script>
+        // Script para activar los acordeones
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

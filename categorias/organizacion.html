@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicación y Organización - Soporte Blackboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver al Panel</a>
+        <h1>Comunicación y Organización</h1>
+        <p class="subtitle">Gestión de la visibilidad, anuncios y foros de debate del curso.</p>
+
+        <div class="grid-evaluacion">
+            <a href="../guias/publicacion/guia_condiciones_publicacion.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Condiciones de Publicación</h3>
+                <p>Configura la visibilidad progresiva de contenidos.</p>
+            </a>
+            <a href="../guias/anuncios/guia_anuncios.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Anuncios del Curso</h3>
+                <p>Cómo programar mensajes y enviarlos por correo.</p>
+            </a>
+            <a href="../guias/foros/guia_foros.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Foros de Debate</h3>
+                <p>Creación y gestión de hilos de discusión y calificación.</p>
+            </a>
+            <a href="../guias/organizacion-contenido/guia_orden_elementos.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Organización de Contenidos</h3>
+                <p>Mejores prácticas para ordenar carpetas y documentos.</p>
+            </a>
+            <a href="../guias/organizacion-contenido/guia_importar_contenidos.html" class="card-tool">
+                <span class="tag">Guía</span>
+                <h3>Copiar Contenidos (Importar)</h3>
+                <p>Importa rúbricas, exámenes o materiales desde otras asignaturas.</p>
+            </a>
+
+        </div>
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+
+    <script src="../history.js"></script>
+    <script>
+        document.querySelectorAll('.card-tool').forEach(card => {
+            card.addEventListener('click', function() {
+                // Esto le avisa a history.js que guarde la dirección del enlace
+                registrarVisita(this.getAttribute('href'));
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

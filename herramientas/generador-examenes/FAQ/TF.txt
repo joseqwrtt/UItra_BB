@@ -1,0 +1,26 @@
+FAQ – Preguntas TF (True/False, Verdadero/Falso) – Blackboard Ultra
+
+Descripción:
+TF permite crear preguntas con solo dos opciones: Verdadero o Falso.
+El alumno debe seleccionar la opción correcta.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+Reglas generales:
+- Tipo de pregunta: TF
+- Texto de la pregunta: enunciado principal.
+- Respuesta: en la columna de respuesta escribir "true" o "false".
+
+Ejemplo en Excel:
+
+Tipo | Texto de la pregunta        | Respuesta
+TF   | La Tierra es plana.         | false
+TF   | El agua hierve a 100°C.     | true
+
+2️⃣ Cómo lo verá el alumno:
+El sistema mostrará la pregunta con las dos opciones: Verdadero / Falso.
+
+3️⃣ Consejos:
+- Solo se permite una respuesta: "true" o "false".
+- No hace falta añadir más columnas de opciones.
+- Verifica en modo estudiante antes de usarla en un examen real.

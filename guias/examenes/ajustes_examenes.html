@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Exámenes - Soporte Blackboard</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: left; margin-bottom: 20px;">
+            <a href="../../categorias/evaluacion.html" class="back-link">← Volver a Evaluación</a>
+        </div>
+
+        <h1>Configuración de Ajustes de Exámenes (Ultra)</h1>
+        <p class="subtitle">Guía de parámetros recomendados para exámenes nuevos o existentes.</p>
+
+        <div class="info-box">
+            Esta guía aborda exclusivamente los parámetros de configuración. 
+            <strong>Importante:</strong> Hasta que el examen no tenga preguntas asignadas, no será posible configurar las condiciones de publicación.
+        </div>
+
+        <section class="step-section">
+            <h2>Comprobaciones Previas</h2>
+            <p>Accedemos al examen dentro del aula, en la ruta: <strong>Actividad y Evaluación Final → Evaluación Final</strong>.</p>
+            <p>Lo primero es comprobar que todas las carpetas donde se encuentra el examen estén <strong>visibles para los estudiantes</strong>. Si alguna carpeta está oculta, el examen no será accesible.</p>
+            <div class="img-placeholder">
+                <img src="img/visibilidad_carpetas.png" alt="Visibilidad de carpetas">
+            </div>
+
+            <p><strong>Verificación de Proctoring: (Solo en los casos que aplique)</strong></p>
+            <ul>
+
+                <li>Si aparece el estado <strong>“🛡️Supervisado”</strong>, indica que el examen tiene activo un sistema de proctoring o supervisión remota.</li>
+                <br></br>
+                <li>Si el examen requiere supervisión y este estado no es visible, por favor, contacte con el departamento correspondiente de su institución para solicitar su activación.</li>
+            </ul>
+            
+            <div class="img-placeholder">
+                <img src="img/smowl_estado.png" alt="Estado de supervisión Smowl">
+            </div>
+        </section>
+
+        <section class="step-section">
+            <h2>Configuración de Parámetros</h2>
+            <p>Para acceder, pulsamos sobre el título del examen y, en la parte superior derecha (Ajustes de la evaluación), hacemos clic en el <strong>icono del engranaje</strong>.</p>
+            <div class="img-placeholder">
+                <img src="img/acceso_ajustes.png" alt="Icono engranaje ajustes">
+            </div>
+
+            <p>Dentro de los ajustes, debemos marcar:</p>
+            <ul>
+                <li>Sin fecha de vencimiento</li>
+                <li>Aleatorizar preguntas</li>
+                <li>Aleatorizar respuestas ⚠️</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>⚠️ Advertencia sobre la aleatorización de respuestas:</strong><br>
+                Si el examen contiene preguntas tipo: <em>“Opción C: la respuesta correcta es A y B”</em>, el cambio de orden provocará incoherencias. Revisa la redacción de tus preguntas antes de activar esto.
+            </div>
+
+            <p>El resto de ajustes no deben marcarse, tal como se muestra en la imagen:</p>
+            <div class="img-placeholder">
+                <img src="img/aleatorizacion.png" alt="Ajustes de aleatorización">
+            </div>
+
+            <p>Los siguientes parámetros deberán quedar sin marcar, configurando los desplegables según esta imagen de apoyo:</p>
+            <div class="img-placeholder">
+                <img src="img/ajustes_desplegables.png" alt="Configuración de menús desplegables">
+            </div>
+        </section>
+
+        <section class="step-section" id="envio-auto">
+            <h2>Publicación y Resultados</h2>
+            <div class="warning-box">
+                <strong>⚠️ Muy importante:</strong><br>
+                La opción <strong>“Publicar la calificación de la evaluación automáticamente”</strong> NO debe marcarse. Si se activa, las notas se publican al finalizar y no se puede deshacer.
+            </div>
+            <div class="img-placeholder">
+                <img src="img/no_publicar_auto.png" alt="Ajuste publicación automática">
+            </div>
+
+            <p>En el apartado <strong>“Resultados de evaluación”</strong>, podrás definir qué verán los estudiantes tras la entrega y cuándo podrán visualizarlo:</p>
+            <div class="img-placeholder">
+                <img src="img/resultados_evaluacion.png" alt="Resultados de evaluación">
+            </div>
+
+            <div class="info-box">
+                ⚠️ Esta configuración deberá ajustarse a las directrices específicas de la asignatura o titulación.
+            </div>
+            <div class="img-placeholder">
+                <img src="img/ajuste_directrices.png" alt="Directrices de titulación">
+            </div>
+        </section>
+
+        <section class="step-section">
+            <h2>Límite de Tiempo</h2>
+            <ol>
+                <li>Pulsamos en <strong>“Agregar límite de tiempo”</strong>.</li>
+                <li>Establecemos la duración correspondiente.</li>
+                <li><strong>⚠️ Marcamos “Envío automático”</strong>.</li>
+            </ol>
+            <div class="warning-box">
+                Si no activas el envío automático y el estudiante no pulsa “Enviar”, el examen no se recibirá nunca y no se podrá forzar el envío después.
+            </div>
+            <div class="img-placeholder">
+                <img src="img/limite_tiempo.png" alt="Configuración de tiempo">
+            </div>
+        </section>
+
+        <section class="step-section">
+            <h2>Finalización</h2>
+            <p>Guardamos los ajustes en la parte inferior. El resultado final debe ser similar al de esta captura:</p>
+            <div class="img-placeholder">
+                <img src="img/resultado_final.png" alt="Resultado final de ajustes">
+            </div>
+            <p>Aún quedaría pendiente configurar las condiciones de publicación.</p>
+        </section>
+
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+</body>
+</html>

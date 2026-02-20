@@ -1,0 +1,40 @@
+
+FAQ – Preguntas OP (Opinión / Escala Likert) – Blackboard Original
+
+Descripción:
+Las preguntas OP permiten que el alumno indique su opinión, nivel de acuerdo o satisfacción en una escala.
+Se utilizan para encuestas, cuestionarios de retroalimentación o evaluaciones no calificadas.
+Actualmente, este tipo de preguntas **solo es compatible con la vista Original** de Blackboard.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+Reglas generales:
+- Tipo de pregunta: OP
+- Texto de la pregunta: colocar el enunciado completo de la pregunta.
+- Opciones / valores de la escala: colocar columnas consecutivas como referencia, pero **Blackboard Original siempre utilizará la escala de 5 puntos predeterminada del curso**.
+- **No importa el texto que pongas en las columnas**; solo se usa para referencia al importar.
+
+Ejemplo de Excel/TXT:
+
+Tipo | Texto de la pregunta                        | Opción 1       | Opción 2     | Opción 3
+OP   | ¿Qué tan satisfecho estás con el curso?     | Muy insatisfecho | Insatisfecho | Neutral
+
+Notas:
+- ⚠️ Blackboard completará automáticamente la escala de 5 puntos, ignorando tus opciones personalizadas.⚠️
+- Cada columna solo sirve de referencia visual; no cambia el comportamiento de la escala.
+- Las preguntas OP no permiten respuestas abiertas; siempre es selección de opción.
+
+2️⃣ Cómo lo verá el alumno:
+
+- En modo estudiante, aparecerá la pregunta con una fila de opciones o botones de radio.
+- El alumno selecciona **una sola opción** correspondiente a su nivel de acuerdo/opinión.
+
+3️⃣ Consideraciones importantes:
+
+- Solo compatible con Blackboard Original. **No funciona en Ultra.**
+- No se puede personalizar el número de opciones desde Excel/TXT.
+- Para cambiar la escala, se debe modificar la configuración de la encuesta/cuestionario directamente en Blackboard.
+- Ideal para encuestas, retroalimentación y cuestionarios de satisfacción.
+- Siempre probar la pregunta en modo estudiante antes de usarla en un examen real.
+
+

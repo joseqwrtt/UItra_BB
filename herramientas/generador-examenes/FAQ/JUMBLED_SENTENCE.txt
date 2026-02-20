@@ -1,0 +1,36 @@
+FAQ – Preguntas JUMBLED_SENTENCE – Blackboard Original / Ultra
+
+Descripción:
+JUMBLED_SENTENCE permite crear preguntas donde el alumno debe reorganizar palabras o fragmentos para formar una oración correcta. Cada palabra o frase se considera un bloque que puede arrastrar o colocar en orden.
+
+Compatibilidad:
+- **Blackboard Original:** Compatible. La importación desde Excel/TXT funciona correctamente.
+- **Blackboard Ultra:** No compatible. Las preguntas JUMBLED_SENTENCE no se importan automáticamente; deben crearse manualmente en la interfaz de Ultra.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT (solo Original):
+
+Reglas generales:
+- Tipo de pregunta: JUMBLED_SENTENCE
+- Texto de la pregunta: escribir la oración desordenada con palabras o frases separadas por espacios.
+- Respuestas posibles: colocar cada palabra o fragmento en columnas consecutivas.
+- No se requiere marcar “correct” o “incorrect”; la posición correcta se determina en Blackboard Original.
+
+Ejemplo de Excel:
+
+Tipo              | Texto de la pregunta                    | Respuesta 1 | Respuesta 2 | Respuesta 3 | Respuesta 4 | Respuesta 5
+JUMBLED_SENTENCE  | Reordena las palabras: "comer quiero pizza una" | quiero | comer | una | pizza
+
+Notas:
+- Cada celda representa un bloque de la oración que el alumno debe organizar.
+- Blackboard Original evaluará automáticamente si la secuencia final coincide con la correcta.
+
+2️⃣ Cómo lo verá el alumno:
+
+- En modo estudiante, los bloques aparecerán desordenados.
+- El alumno debe arrastrar o colocar cada bloque en el orden correcto para responder correctamente.
+
+3️⃣ Consejos y consideraciones:
+
+- Ultra **no soporta** este tipo de pregunta mediante importación desde Excel/TXT.
+- Se recomienda probar la pregunta en modo estudiante antes de usarla en un examen real.
+- Para Ultra, la pregunta debe crearse manualmente si se desea usar JUMBLED_SENTENCE.

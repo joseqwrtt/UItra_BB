@@ -1,0 +1,117 @@
+FAQ – Preguntas FIB_PLUS (Fill in Multiple Blanks) – Blackboard Ultra
+
+
+
+Descripción:
+
+FIB_PLUS permite crear preguntas con varios espacios en blanco dentro de un mismo enunciado.
+
+Cada espacio puede aceptar una o varias respuestas posibles.
+
+Blackboard Ultra puede configurarse para aceptar las respuestas en cualquier orden, pero tiene limitaciones al importar desde Excel/TXT.
+
+
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+
+
+Reglas generales:
+
+- Tipo de pregunta: FIB_PLUS
+
+- Texto de la pregunta: usar marcadores [a], [b], [c], etc. tantas veces como espacios en blanco quieras.
+
+- Respuestas posibles: colocar en columnas consecutivas.
+
+- No es necesario usar "correct" o "incorrect"; cada columna se interpreta como respuesta válida.
+
+
+
+⚠️ Limitaciones importantes:
+
+- Blackboard Ultra **solo asigna las respuestas del TXT/Excel al primer hueco (BLANK-1)**.
+
+- Los huecos adicionales ([b], [c], BLANK-2, BLANK-3…) **no reciben automáticamente sus respuestas**.
+
+- Si el docente no corrige la pregunta en la interfaz, Blackboard interpretará:
+
+  BLANK-2 = "BLANK-2"
+
+  BLANK-3 = "BLANK-3"
+
+ …y el alumno tendría que escribir literalmente "BLANK-2" o "BLANK-3" para que sea correcto, lo cual es incorrecto.
+
+
+
+Ejemplo de Excel/TXT:
+
+
+
+Tipo   | Texto de la pregunta                   | Respuestas posibles
+
+FIB_PLUS | El sistema feudal estaba compuesto por [a], [b] y [c] vasallos. | señores feudales;nobles;terratenientes;aristócratas
+
+
+
+Notas:
+
+- El marcador [a],[b],[c] sirve para indicar los huecos.
+
+- Todas las respuestas posibles se listan en la columna de Excel; Ultra asignará estas respuestas **solo al primer hueco**.
+
+- Los huecos adicionales **requieren intervención manual** del docente para asignar respuestas correctas desde la interfaz de Blackboard.
+
+
+
+2️⃣ Cómo corregir o ajustar la pregunta en Blackboard Ultra:
+
+
+
+Pasos obligatorios para el docente:
+
+1. Abrir la pregunta importada en modo edición.
+
+2. Revisar cada espacio en blanco adicional (BLANK-2, BLANK-3…).
+
+3. Para cada hueco:
+
+  - Hacer clic en el hueco y copiar/pegar o escribir las respuestas correctas correspondientes.
+
+  - Separar varias respuestas posibles con punto y coma `;` si se quiere permitir múltiples respuestas.
+
+4. Activar la opción **“Contiene coincidencia”** para que el alumno pueda escribir las respuestas correctas en cualquier orden.
+
+5. Guardar los cambios y probar la pregunta en modo estudiante para verificar que los huecos y las respuestas funcionen correctamente.
+
+
+
+3️⃣ Cómo lo verá el alumno:
+
+
+
+- En modo estudiante, los espacios aparecerán como huecos en blanco:
+
+ El sistema feudal estaba compuesto por ___, ___ y ___ vasallos.
+
+- Con la opción “Contiene coincidencia” activada:
+
+ - El alumno puede escribir cualquiera de las respuestas correctas en cualquier hueco.
+
+ - Ultra evaluará correctamente, siempre que el docente haya completado BLANK-2 y BLANK-3 en la interfaz.
+
+
+
+4️⃣ Consejos y consideraciones:
+
+
+
+- Para respuestas independientes por hueco, **la pregunta debe ajustarse manualmente en Ultra**.
+
+- Los marcadores [a],[b],[c] son opcionales; también funciona [respuesta].
+
+- Puedes usar pistas o hints para que el alumno vea sugerencias de respuestas.
+
+- Siempre prueba la pregunta en modo estudiante antes de usarla en un examen real.
+
+- **La intervención del docente es obligatoria** para evitar que aparezcan BLANK-2/BLANK-3 como respuestas literales.

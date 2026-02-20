@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/favicon2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas de Soporte Blackboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Panel de Herramientas Blackboard</h1>
+        <p class="subtitle">Selecciona una categoría o busca una macro específica de Zendesk:</p>
+
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Ej: Turnitin, Smowl, Ponderación, Grupos...">
+            
+            <div id="recientes" class="destacados-mini">
+                </div>
+        </div>
+
+        <div id="noResults" class="no-results">No se han encontrado herramientas o guías que coincidan con tu búsqueda.</div>
+
+        <div class="menu-grid" id="menuGrid">
+            
+            <a href="categorias/evaluacion.html" class="card" data-content="añadir preguntas examen banco preguntas configurar ajustes examenes intento borrador test fallos detectados examenes generar banco preguntas excel copiar banco preguntas crear actividad">
+                <div class="icon">📝</div>
+                <h2>Exámenes y Evaluación</h2>
+                <p>Configuración de tests, bancos de preguntas, intentos de borrador y solución de fallos en exámenes.</p>
+            </a>
+
+            <a href="categorias/calificaciones.html" class="card" data-content="generar columna manual añadir calculo ponderacion asignar rubricas precargadas mover ordenar columnas libro calificaciones calificacion individual actividad grupal calificacion general ponderadas historial centro calificaciones">
+                <div class="icon">📊</div>
+                <h2>Calificaciones y Rúbricas</h2>
+                <p>Gestión del Libro de Calificaciones, cálculos ponderados, rúbricas y organización de columnas.</p>
+            </a>
+
+            <a href="categorias/grupos_alumnos.html" class="card" data-content="agregar tiempo excepciones grupos masivos csv 01 02 autoinscripcion duplicar grupos soporte pdi">
+                <div class="icon">👥</div>
+                <h2>Alumnos y Grupos</h2>
+                <p>Creación masiva de grupos (CSV), excepciones de tiempo (acomodaciones) y gestión de usuarios.</p>
+            </a>
+
+            <a href="categorias/herramientas_externas.html" class="card" data-content="importar contenidos rubricas actividades informes smowl uso turnitin aulas subir video kaltura media originalidad antiplagio proctoring">
+                <div class="icon">🛠️</div>
+                <h2>Herramientas y Contenido</h2>
+                <p>Guías para Turnitin, Smowl, Kaltura y otras herramientas integradas en Blackboard.</p>
+            </a>
+
+            <a href="categorias/organizacion.html" class="card" data-content="condiciones de publicacion visibilidad crear anuncios crear foro debate curso ordenar elementos">
+                <div class="icon">📢</div>
+                <h2>Comunicación y Orden</h2>
+                <p>Gestión de anuncios, foros de debate y reglas para la visibilidad de contenidos (condiciones).</p>
+            </a>
+
+            <a href="Aulas ultra - FAQ/FAQs Blackboard Learn Ultra PDI – Universidad Internacional de Valencia.html" class="card" data-content="preguntas frecuentes general soporte universidad internacional valencia pdi ayuda rapida">
+                <div class="icon">❓</div>
+                <h2>FAQs Generales</h2>
+                <p>Acceso rápido a las preguntas más frecuentes del profesorado sobre Ultra.</p>
+            </a>
+
+        </div>
+
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+    <script>
+        const eliminarAcentos = (texto) => {
+            return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        };
+
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = eliminarAcentos(e.target.value.toLowerCase());
+            const cards = document.querySelectorAll('.card');
+            const noResults = document.getElementById('noResults');
+            let found = false;
+
+            cards.forEach(card => {
+                const title = eliminarAcentos(card.querySelector('h2').innerText.toLowerCase());
+                const description = eliminarAcentos(card.querySelector('p').innerText.toLowerCase());
+                const extraContent = eliminarAcentos(card.getAttribute('data-content') || "");
+
+                if (title.includes(searchTerm) || 
+                    description.includes(searchTerm) || 
+                    extraContent.toLowerCase().includes(searchTerm)) {
+                    card.style.display = "flex";
+                    found = true;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+            noResults.style.display = found ? "none" : "block";
+        });
+    </script>
+    
+    <script src="history.js"></script>
+</body>
+</html>

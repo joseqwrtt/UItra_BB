@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foros de Debate - Soporte Blackboard</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: left; margin-bottom: 20px;">
+            <a href="../../categorias/organizacion.html" class="back-link">← Volver a Organización</a>
+        </div>
+
+        <h1>Crear Foro (Debate)</h1>
+        
+        <section class="step-section">
+            <p>Para generar un debate (Foro), accedemos a la sección <strong>“Debates”</strong> y pulsamos a la derecha en <strong>“Nuevo debate”</strong>.</p>
+            <div class="img-placeholder">
+                <img src="img/nuevo_debate.png" alt="Nuevo debate">
+            </div>
+            
+            <p>Aparecerá un nuevo menú donde debemos determinar el título y una descripción sobre el motivo de uso de ese foro de debates.</p>
+            <div class="img-placeholder">
+                <img src="img/config_titulo_debate.png" alt="Título y descripción">
+            </div>
+
+            <p>Recordemos poner como <strong>“Visible para los estudiantes”</strong> para que los alumnos puedan acceder (Arriba a la derecha de la página).</p>
+            <div class="img-placeholder">
+                <img src="img/visible_estudiantes_debate.png" alt="Visible para estudiantes">
+            </div>
+
+            <hr>
+
+            <p>En caso de querer determinar unas fechas concretas de acceso al debate, deberán seleccionar <strong>“Condiciones de publicación”</strong>.</p>
+            <div class="img-placeholder">
+                <img src="img/condiciones_publicacion_debate.png" alt="Condiciones de publicación">
+            </div>
+        </section>
+
+            <div class="info-box">
+                <strong>Uso de calificación:</strong> La siguiente configuración solo es necesaria en casos en los que se desee que el foro conste como una <strong>"actividad"</strong> evaluable dentro del curso.
+            </div>
+        
+            
+        <section class="step-section">
+            
+
+            <button class="accordion" id="debate-calificable">Configuración de Foro Calificable (Opcional)</button>
+            <div class="panel">
+                <div class="step-section">
+                    <p style="margin-top: 20px;">Si de manera adicional deseamos que este foro de debates sea evaluable y nos aparezca una columna asociada en el libro de calificaciones, deberemos pulsar el engranaje ⚙️ de la derecha.</p>
+                    <div class="img-placeholder">
+                        <img src="img/ajustes_debate_engranaje.png" alt="Engranaje ajustes">
+                    </div>
+
+                    <p>Donde marcaremos las opciones:</p>
+                    <ul>
+                        <li><strong>Mostrar en la página de contenido del curso:</strong> Para que salga en la sección de “Contenido” y posicionarlo manualmente en la carpeta de actividades según corresponda.</li>
+                        <br></br>
+                        <li><strong>Calificar debate:</strong> Al activarlo este debate contará para una calificación.</li>
+                    </ul>
+                    <div class="img-placeholder">
+                        <img src="img/activar_calificacion_debate.png" alt="Opciones de calificación">
+                    </div>
+
+                    <div class="warning-box">
+                        <strong>Puntuación máxima:</strong> Debemos asignar los puntos máximos de la actividad, sería en base 10.
+                    </div>
+                    <div class="img-placeholder">
+                        <img src="img/puntuacion_debate.png" alt="Puntuación máxima">
+                    </div>
+
+                    
+                </div>
+            </div>
+                    <div class="warning-box">
+                        El resto de opciones, las pueden activar según su criterio y necesidades.
+                    </div>
+
+        </section>
+
+        <div style="text-align: left; margin-bottom: 20px;">
+            <a href="../../categorias/organizacion.html" class="back-link">← Volver a Organización</a>
+        </div>
+
+        <p class="warning-text" style="margin-top: 50px;">Hecho por Jose F. © 2026</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

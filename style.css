@@ -1,0 +1,537 @@
+/* ==========================================================================
+   1. ESTILOS BASE Y CONTENEDOR
+   ========================================================================== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* ==========================================================================
+   2. TABLA DE PREGUNTAS (GENERADOR)
+   ========================================================================== */
+#questionsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#questionsTable th, #questionsTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#questionsTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#questionsTable .info-button {
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#questionsTable .info-button:hover {
+    background: #0056b3;
+}
+
+#questionsTable .total-label {
+    text-align: right;
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+#questionsTable .total-value {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ==========================================================================
+   3. ENTRADAS, SELECTS Y BOTONES GENERALES
+   ========================================================================== */
+input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.actions {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #1e7e34;
+}
+
+.btn.secondary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn.secondary:hover {
+    background-color: #0056b3;
+}
+
+/* ==========================================================================
+   4. MODAL
+   ========================================================================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Aumentado para asegurar que cubra todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalTitle {
+    color: #0056b3;
+}
+
+#modalContent {
+    white-space: pre-wrap;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* ==========================================================================
+   5. CATEGORÍAS Y NAVEGACIÓN
+   ========================================================================== */
+.back-link { 
+    display: inline-block; 
+    margin-bottom: 20px; 
+    color: #0056b3; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.internal-link { 
+    color: #0056b3; 
+    font-weight: bold; 
+    text-decoration: underline; 
+}
+
+.grid-evaluacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card-tool {
+    background: #fff;
+    border: 1px solid #eee;
+    border-left: 5px solid #0056b3;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-tool:hover { 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    transform: translateX(5px); 
+    background-color: #f8fbff;
+}
+
+.card-tool h3 { 
+    margin: 0 0 10px 0; 
+    color: #0056b3; 
+}
+
+.card-tool p { 
+    margin: 0; 
+    font-size: 0.9em; 
+    color: #555; 
+}
+
+.tag {
+    display: inline-block;
+    background: #e1f5fe;
+    color: #01579b;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+/* ==========================================================================
+   6. ESTILOS PARA GUÍAS PASO A PASO (UNIFICADO .STEP Y .STEP-SECTION)
+   ========================================================================== */
+.step-section, .step { 
+    margin-bottom: 40px; 
+    padding: 20px;
+    border-bottom: 1px solid #eee; /* Borde recuperado de grupos */
+    text-align: left; 
+}
+
+.step-section h2, .step h3 { 
+    color: #0056b3; 
+    margin-top: 0;
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.img-placeholder { 
+    background: #f9f9f9; 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    margin: 20px 0; 
+    border-radius: 8px; 
+    text-align: center;
+    box-sizing: border-box; 
+    overflow: hidden; /* Corta cualquier desborde accidental */
+    display: flex;    /* Ayuda a centrar perfectamente */
+    justify-content: center;
+    align-items: center;
+}
+
+.img-placeholder img, .step img { 
+    max-width: 98%;  /* <-- AQUÍ LA SOLUCIÓN: Nunca tocará los bordes */
+    height: auto; 
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: block;
+}
+
+.info-box { 
+    background: #e3f2fd; 
+    border-left: 5px solid #2196f3; 
+    padding: 15px; 
+    margin: 20px 0; 
+    border-radius: 0 4px 4px 0;
+}
+
+.warning-box { 
+    background: #fff4e5; 
+    border-left: 5px solid #ff9800; 
+    padding: 15px; 
+    margin: 20px 0; 
+    border-radius: 0 4px 4px 0;
+}
+
+.warning-box h2 {
+    color: #856404;
+    border-bottom: none;
+    margin-top: 0;
+}
+
+/* ==========================================================================
+   7. ACORDEONES (RÚBRICAS Y EXCEPCIONES)
+   ========================================================================== */
+.accordion {
+    background-color: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active, .accordion:hover {
+    background-color: #0056b3;
+    color: white;
+    border-color: #004494;
+}
+
+.accordion:after {
+    content: '\002B'; /* Signo + */
+    font-size: 1.3em;
+}
+
+.active:after {
+    content: "\2212"; /* Signo - */
+}
+
+.panel {
+    padding: 0 25px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-left: 3px solid #0056b3; /* Línea distintiva recuperada de rúbricas */
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   8. BOTÓN DE ACCIÓN Y TEXTOS FINALES
+   ========================================================================== */
+.btn-guia {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #ffffff !important;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 15px;
+}
+
+.btn-guia:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-guia:active {
+    transform: translateY(0);
+}
+
+.warning-text {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* --- Estilos del Menú Principal (Index) --- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-color: #0056b3;
+}
+
+.card h2 {
+    color: #0056b3;
+    margin: 15px 0 10px 0;
+    font-size: 1.4em;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.icon {
+    font-size: 3.5em;
+}
+
+.search-wrapper {
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#searchInput:focus {
+    border-color: #0056b3;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* --- NUEVO: Panel de Destacados (Lo más consultado) --- */
+.destacados-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 5px solid #0056b3;
+}
+
+.destacados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.destacado-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.destacado-link:hover {
+    border-color: #0056b3;
+    color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* --- Estilos para el Historial de Recientes --- */
+.destacados-mini {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.mini-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #334155;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre icono y texto */
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.mini-card:hover {
+    border-color: #0056b3;
+    background: #f8fbff;
+    color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+
+/* Estilo para el mensaje de historial vacío */
+#recientes span {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 10px;
+}

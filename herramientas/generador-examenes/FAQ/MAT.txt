@@ -1,0 +1,32 @@
+FAQ – Preguntas MAT (Emparejamiento) – Blackboard Ultra
+
+Descripción:
+El tipo de pregunta MAT (Emparejamiento) permite crear pares de elementos que el estudiante debe relacionar correctamente.  
+Se utiliza mucho para vocabulario, definiciones, fechas, autores y obras, fórmulas, etc.
+
+1️⃣ Cómo configurar la pregunta en Excel/TXT:
+
+Reglas generales:
+- Tipo de pregunta: MAT
+- Texto de la pregunta: enunciado general de la relación (ej. “Relaciona cada descubrimiento con su autor”)
+- Cada par se coloca en dos columnas consecutivas:
+    - Columna “Respuesta X”: elemento del primer conjunto
+    - Columna “Seleccione opción X”: elemento del segundo conjunto (respuesta correcta)
+- Se pueden añadir varios pares consecutivos (Respuesta 1 / Seleccione opción 1, Respuesta 2 / Seleccione opción 2…).  
+- Número recomendado de pares: 2 a 10.
+
+Ejemplo de Excel:
+
+Tipo | Texto de la pregunta                          | Respuesta 1           | Seleccione opción 1 | Respuesta 2                         | Seleccione opción 2 | Respuesta 3    | Seleccione opción 3   | Respuesta 4 | Seleccione opción 4
+MAT  | Relaciona cada descubrimiento con su autor    | Teoría de la Relatividad | Albert Einstein   | Ley de la Gravitación Universal    | Isaac Newton      | Penicilina     | Alexander Fleming  | Teléfono    | Alexander Graham Bell
+
+2️⃣ Cómo lo verá el alumno:
+
+- En modo estudiante, Blackboard mostrará los elementos de un conjunto en una columna y el otro conjunto en otra columna para emparejar.  
+- El estudiante deberá relacionar cada elemento con su respuesta correcta.
+
+3️⃣ Consejos y consideraciones:
+
+- Asegúrate de que los pares sean claros y sin ambigüedades.  
+- Se recomienda usar entre 2 y 10 pares por pregunta.  
+- Prueba siempre la pregunta en modo estudiante antes de usarla en un examen real.
